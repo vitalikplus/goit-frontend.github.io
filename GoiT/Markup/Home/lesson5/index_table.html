@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tables</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			background-color: lightgrey;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin: auto;
+			border: 1px solid darkgrey;
+			margin-top: 15px;
+		}
+
+		td 	{
+			border:10px solid black;
+			margin: 0px;
+			padding: 0px;
+			background-color: white;
+		}
+
+		tr {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.tr1 {height: 47px;} 
+		.tr2 {height: 130px} 
+		.tr3 {height: 130px} 
+		.tr4 {height: 65px;} 
+		.tr5 {height: 65px;} 
+		.tr6 {height: 47px;} 
+		.tr7 {height: 47px;} 
+		
+		.td47 {
+			width: 47px;
+		}
+
+		.td65 {
+			width: 65px;
+		}
+
+		.td130 {
+			width: 130px;
+		}
+
+		.left {
+			border-left: 0px;
+		}
+
+		.right {
+			border-right: 0px;
+		}
+
+		.top {
+			border-top: 0px;
+		}
+
+		.bottom {
+			border-bottom: 0px;
+		}
+
+		.red {
+			background-color: red;
+		}
+
+		.yellow {
+			background-color: yellow;
+		}
+
+		.grey {
+			background-color: grey;
+
+		}
+
+		.blue {
+			background-color: blue;			
+		}
+
+	</style>
+
+</head>
+<body>
+	<table>
+		<thead>
+		</thead>
+		<tbody>	
+			<tr class="tr1">
+				<td colspan="2" class="left top" ></td>
+				<td colspan="2" class="top"></td>
+				<td colspan="2" class="right top yellow"></td>
+			</tr>
+			<tr class="tr2">
+				<td class="left td47"></td>
+				<td colspan="3" rowspan="2" class="red" ></td>
+				<td colspan="2" class="right yellow"></td>
+			</tr>
+			<tr class="tr3">
+				<td rowspan="2" class="left"></td>
+				<td class="td65"></td>
+				<td class="right td65"></td>
+			</tr>
+			<tr class="tr4">
+				<td class="left grey td65"></td>
+				<td class="grey td65"></td>
+				<td></td>
+				<td colspan="2" class="right"></td>
+			</tr>
+			<tr class="tr5">
+				<td rowspan="3" class="left bottom yellow"></td>
+				<td class="grey"></td>
+				<td class="grey"></td>
+				<td ></td>
+				<td colspan="2" rowspan="2" class="right blue"></td>
+			</tr>
+			<tr class="tr6">
+				<td colspan="2" rowspan="2" class="left bottom"></td>
+				<td class="right grey td130"></td>
+			</tr>
+			<tr class="tr7">
+				<td colspan="3" class="left right bottom"></td>
+			</tr>
+		</tbody>	
+	</table>
+</body>
+</html>
