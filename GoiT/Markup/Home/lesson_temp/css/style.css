@@ -1,0 +1,162 @@
+* {
+	margin: 0px;
+	padding-top: 0px;
+}
+
+.header {
+	height: 100px;
+	background: grey;
+}
+
+.container1, .container2 {
+	position: relative;
+	overflow: hidden;
+}
+
+.box {
+	height: 100px;
+	background: blue;
+	border: 20px solid black;
+	float: left;
+	width: 29%;;
+	margin: 20px 2%;
+	box-sizing: border-box; 
+}
+
+.sidebar {
+	position: absolute;
+	width: 300px;
+	background: yellow;
+	top: 0;
+	left: 0;
+}
+
+.content {
+	float: right;
+	margin-left: 300px;
+	/*width: 70%;*/
+	background: green;
+}	
+
+.footer, .middleware{
+	clear: both;
+	height: 100px;
+	background: brown;
+}
+
+.menu {
+	position: relative; /*Why this???*/
+	overflow: hidden;
+	list-style: none;
+}
+
+.menu li {
+	float: left;
+}
+
+/*LESSON 8 SPRITE to speed up the small images*/
+
+.menu a {
+	display: block;
+	height: 64px;
+	width: 72px;
+	background: #fff url(../img/sprite.png) 0 0 no-repeat;
+	transition: 0.2s all;
+}	
+
+.menu a:hover {
+	background-position: 0px -64px;
+}
+
+.menu .logo2 {
+	background-position: -134px 0px;
+}
+.menu .logo3 {
+	background-position: -268px 0px;
+}
+.menu .logo4 {
+	background-position: -420px 0px;
+}
+.menu .logo5 {
+	background-position: -554px 0px;
+}
+.menu .logo6 {
+	background-position: -688px 0px;
+}
+
+.menu logo1:hover {
+	background-position: 0px - 64px;
+}
+
+.menu .logo2:hover {
+	background-position: -134px -64px;
+}
+
+.menu .logo3:hover  {
+	background-position: -268px -64px;
+}
+.menu .logo4:hover  {
+	background-position: -420px -64px;
+}
+.menu .logo5:hover  {
+	background-position: -554px -64px;
+}
+.menu .logo6:hover  {
+	background-position: -688px -64px;
+}
+
+/*LESSON 7 Responsive not Adaptive design*/
+
+@media (max-width: 700px) {
+	.box {
+		width: 46%;
+	}
+}@media (max-width: 500px) {
+	.box {
+		width: 96%;
+	}
+}
+
+/*@media google retina support pixel density etc */
+
+/*LESSON 8 BEM Methodology from Yandex*/
+
+.menu2 {
+	font-family: Tahoma, Arial, sans-serif;
+	background: #eee;
+	margin: 0px;
+}
+
+.menu2_item {
+	padding-left: 17px;
+	font-size: 14px;
+
+}
+
+.menu2_link {
+	text-decoration: none;
+}
+
+.menu2_link:hover {
+	text-decoration: underline;
+}
+
+.menu2-blue {
+	background: blue;
+}
+
+.menu2-blue .menu2_link {
+	color: yellow;
+}
+
+/*LESSON 8 BOOTSTRAP*/
+.col-md-8 {
+	border: 1px solid black;
+}
+.col-md-6 {
+	border: 1px solid black;
+}
+.col-md-4 {
+	border: 1px solid black;
+}
+

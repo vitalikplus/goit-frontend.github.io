@@ -1,0 +1,306 @@
+body {
+	background-color: #bfbfbf;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: auto;
+	padding-top: 6px;
+	background-color: white;
+}
+
+/*-------------HEADER+BANNER*/
+
+header {
+	font-size: 18px;
+	width: 910px;
+	margin: auto;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.banner {
+	width: 910px;
+	margin: auto;
+}
+
+.icon {
+	display: inline-block;
+}
+
+.icon_phone {
+	display: inline-block;
+	margin: auto;
+}
+
+.phone_number {
+	display: inline-block;
+	font-size: 18px;
+	vertical-align: top;
+}
+
+.avtoriz {
+	display: inline-block;
+	background-color: #0e375b;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+.avtoriz_element {
+	display: inline-block;
+	/*padding: 2px;*/
+	color: white;
+	vertical-align: middle;
+}
+
+.icons3 {
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*-----------------MENU*/
+
+.menu_ul {
+	margin: auto;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 3px;
+	padding-bottom: 2px; 
+	background-color: black;
+	width: 910px;
+	/*border: 1px solid grey;*/
+	border-radius: 5px;
+	height: 28px;
+}
+
+.menu_li {
+	display: inline-block;
+	float: right;
+
+}
+
+.menu_li a:link, .menu_li a:visited {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-transform: none;
+	font-size: 14px;
+	padding: 6px 18px;
+
+}
+
+.menu_li a:active, .menu_li a:hover {
+	border-radius: 10px;
+	background-color: #0d365a;
+}
+
+.basket {
+	display: block;
+	color: white;
+	padding: 6px 0px 6px 20px;
+	font-size: 14px;
+}
+
+/*-------------FILTERS*/
+.filters {
+	/*height: 135px;*/
+	width: 910px;
+	margin: auto;
+}
+
+.form {
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: inline-block;
+	height: 135px;
+}
+
+.search_by_car {
+	width: 420px;
+}
+
+.search_tire {
+	width: 190px;
+}
+
+.search_disk {
+	width: 270px;
+}
+
+/*------------------LEFT CONTENT*/
+.content {
+	overflow: hidden;
+	/*float: left;*/
+	width: 910px;
+	margin: auto;
+}
+.left_sidebar{
+	width: 190px;
+	height: 628px;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	float: left;
+}
+
+.naming_list {
+	padding-left: 34px;
+} 
+
+.naming_list a:link, .naming_list a:visited {
+	text-decoration: none;
+	color: #465961;
+}
+
+.naming_list a:active, .naming_list a:hover {
+	text-decoration: underline;
+	color: #0c3256;
+}
+
+.title1 {
+	border: 1px solid #214e6f;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #214e6f;
+	padding: 2px;
+
+}
+
+.title1 span {
+	/*vertical-align: top;*/
+	/*display: inline-block;*/
+	/*padding: 3px;*/
+    display:flex;		
+    align-items:center;
+}
+
+.title1 img {
+	display: inline;
+}
+
+h1 {
+
+	height: 14px;
+}
+
+
+/*----------------CENTER CONTENT*/
+.center{
+	float: left;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+  	width: 525px;
+  	background-color: #94a7b0
+  }
+
+.tire_div {
+	width: 135px;
+	height: 130px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+.tire {
+	padding-left: 26px;
+	padding-top: 5px;
+}
+
+.manufacturer,
+.model,
+.price {
+	text-align: center;
+}
+
+td {
+	padding: 14px;
+}
+/*-----------------------RIGHT CONTENT*/
+
+.right_sidebar{
+	width: 190px;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	float: right;
+}
+
+/*-------------LOGOS*/
+
+
+.ls {
+	padding-left: 160px;
+	margin-top: 40px;
+	margin-bottom: 30px; 
+}
+
+.l {
+	display: inline;
+	padding: 0px 4px;
+	display: inline-block;
+}
+
+.logos {
+	margin: auto;
+	width: 910px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+
+}
+
+.logos li {
+	display: inline;
+	margin: 6px;
+}
+
+/*-----------FOOTER*/
+
+footer {
+	width: 910px;
+	height: 100px;
+	margin: auto;
+	padding-top: 13px;
+	background-color: #213a4d;
+
+} 
+
+.footer_menu {
+	padding-left: 300px;	
+}
+
+.footer_menu_li {
+	display: inline;
+	padding: 0px 10px; 
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+} 	
+
+.footer_menu_li:first-child {
+	border: none;
+	border-right: 1px solid grey;
+} 
+
+.footer_menu_li:last-child {
+	border: none;
+	border-left: 1px solid grey;
+} 
+
+.footer_menu_li a:link, 
+.footer_menu_li a:visited {
+	text-decoration: none;
+	color: #bec6c9;
+}
+
+.footer_menu_li a:hover, 
+.footer_menu_li a:active {
+	text-decoration: none;
+	color: #4fa3c3;
+}
+
+
+.copyright {
+	padding-left: 380px;
+	margin: auto;
+	margin-top: 16px;
+	color: #7f4740;
+}
