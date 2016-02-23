@@ -4,203 +4,243 @@
 	<title>Lesson7 GoIT Homework</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="wrapper">
-	<!-- ---------------HEADER+MENU -->
-	<header>
-		<div class="header_inner">
-<!-- 			<p class="temp">home about product blog HOME ABOUT BLOG</p>
- -->			<img class="pingbuller" src="img/pingbuller.png"></img>
-			<ul class="menu">
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Dolor sut amet
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					lorem ipsum</a
-					>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Products
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Blog
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					About
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Home
-					</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<!-- ---------------SLIDER -->
-	<div class="slider">
-		<div class="slider_shadow">
-			<div class="slider_inner">
-			<div class="slider_inner_text">
-				<h1 class="h1_slider">Lorem Ipsum Dolor</h1>
-				<h2 class="h2_slider">It will make all your dreams come true</h2>
-				<p class="p_slider">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+	<section class="top-part">
+		<!-- ---------------HEADER+MENU -->
+		<header class="header">
+			<div class="section-wrapper clearfix">
+			<img class="pingbuller" src="img/pingbuller.png"></img>
+			<nav>
+				<ul class="main-nav clearfix">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						Home
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						About
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						Blog
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						Products
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						lorem ipsum
+						</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">
+						Dolor sit amet
+						</a>
+					</li>
+				</ul>
+			    <div class="dropdown-menu">
+                    <div class="dropdown-menu-selected-item">
+                        <span class="dropdown-menu-selected-item__link">home</span>
+	                </div>
+                        <ul class="main-nav">
+                            <li class="main-nav__item"><a href="" class="main-nav__link">about</a></li>
+                            <li class="main-nav__item"><a href="" class="main-nav__link">blog</a></li>
+                            <li class="main-nav__item"><a href="" class="main-nav__link">products</a></li>
+                            <li class="main-nav__item"><a href="" class="main-nav__link">lorem ipsum</a></li>
+                            <li class="main-nav__item"><a href="" class="main-nav__link">dolor sit amet</a></li>
+                        </ul>
+				</div>
+			</nav>	
 			</div>
-			<figure class="figure_img_slider">
-				<img class="img_slider" src="img/slider.png"></img>
-			</figure>
+		</header>
+		<!-- ---------------SLIDER -->
+		<div class="slider">
+			<div class="slider_shadow">
+				<div class="section-wrapper clearfix">
+					<div class="slider-arrows-left"></div>
+					<div class="slider-arrows-right"></div>
+				<div class="slider_text">
+					<h1 class="h1_slider">Lorem Ipsum Dolor</h1>
+					<h2 class="h2_slider">It will make all your dreams come true</h2>
+					<p class="p_slider">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+				</div>
+				<figure class="figure_img_slider">
+					<img class="img_slider" src="img/slider.png"></img>
+				</figure>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- ------------------SLIDER-NAV -->
-	<div class="slider_nav">
-		<div class="slider_nav_inner">
-			<form class="form_slider">
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
-				<input type="radio" name="slider">
-			</form>
+		<!-- ------------------SLIDER-NAV -->
+		<div class="slider_nav">
+			<div class="section-wrapper clearfix">
+                <div class="dots">
+	                <ul class="dots-nav clearfix">
+	                    <li class="dots-nav__item"></li>
+	                    <li class="dots-nav__item isActive"></li>
+	                    <li class="dots-nav__item"></li>
+	                    <li class="dots-nav__item"></li>
+	                </ul>
+                </div>
+			</div>
 		</div>
-	</div>
+	</section> <!-- END OF SECTION TOP-PART -->
+
 	<!-- -----------------ABOUT SECTION -->
-	<div class="about">
-		<div class="about_inner">
-			<div class="about_item about_item1">
-				<h1 class="about_item_title">About our company</h1>
-				<p class="about_item_text">
+	<section class="about">
+		<div class="section-wrapper clearfix">
+			<div class="about-item about-item_key">
+				<h1 class="about-item__title">About our company</h1>
+				<p class="about-item__text">
 					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam 
 				</p>
-				<a class="about_item_link">read more</a>			
+				<a class="about-item__link">read more</a>			
 			</div>
-			<div class="about_item about_item2">
-				<h1 class="about_item_title">About our company</h1>
-				<p class="about_item_text">
+			<div class="about-item about-item_dialog">
+				<h1 class="about-item__title">About our company</h1>
+				<p class="about-item__text">
 					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam 
 				</p>
-				<a class="about_item_link">read more</a>			
+				<a class="about-item__link">read more</a>			
 			</div>
-			<div class="about_item about_item3">
-				<h1 class="about_item_title">About our company</h1>
-				<p class="about_item_text">
+			<div class="about-item about-item_melody">
+				<h1 class="about-item__title">About our company</h1>
+				<p class="about-item__text">
 					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam 
 				</p>
-				<a class="about_item_link">read more</a>			
+				<a class="about-item__link">read more</a>			
 			</div>
 		</div>
-	</div>
+	</section>
 <!-- ---------------------CONTENT	 -->
-	<div class="content">
-		<div class="content_inner">
+	<section class="content">
+		<div class="section-wrapper clearfix">
 			<div class="box_left">
 				<img src="img/face.png" class="img_content_face">
 				<div class="box_white">
 					<h1 class="box_left_title">pingbuller 
-					<span>starts here</span>
+					<span class="starts-here">starts here</span>
 					</h1>
 					<p class="box_left_text">
 						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.
 					</p>
 				</div>
-				<img class="img_content_dots" src="img/dot_outer.png">
-					<img src="img/dot_inner.png" class="img_content_dot_inner">
-				</img>
+
+                <div class="dots clearfix">
+	                <ul class="dots-nav clearfix">
+	                    <li class="dots-nav__item"></li>
+	                    <li class="dots-nav__item isActive"></li>
+	                    <li class="dots-nav__item"></li>
+	                    <li class="dots-nav__item"></li>
+	                </ul>
+                </div>
+
 			</div>
 			<div class="box_right">
 				<h1 class="box_right_title">RECENT UPDATES</h1>
 				<ul class="box_right_list">
 					<li class="box_right_list_item">
+						<img src="img/circle.png" alt="this is ALT">
 						<h2 class="box_right_list_item_title">Nunc turpis neque feugiat eget</h2>
 						<p class="box_right_list_item_text">Posted by Admin on March 13 2012 in Recent News
 						</p>
 					</li>
 					<li class="box_right_list_item">
+						<img src="img/circle.png" alt="this is ALT">
 						<h2 class="box_right_list_item_title">Nunc turpis neque feugiat eget</h2>
 						<p class="box_right_list_item_text">Posted by Admin on March 13 2012 in Category
 						</p>
 					</li>
 					<li class="box_right_list_item">
+						<img src="img/circle.png" alt="this is ALT">
 						<h2 class="box_right_list_item_title">Nunc turpis neque feugiat eget</h2>
 						<p class="box_right_list_item_text">Posted by Admin on March 13 2012 in Blog Updates
 						</p>
 					</li>
-				</ul>_
+				</ul>
 				<a href="#" class="box_right_link">READ MORE HERE</a>
 			</div>
 		</div>
-	</div>
+	</section>
 
 <!-- -----------------LOGOS -->
-	<div class="logos">
-		<div class="logos_inner">
-			<img src="img/logos.png" class="img_logos">
+	<section class="logos">
+		<div class="section-wrapper clearfix">
+			<ul class="logos-list clearfix">
+				<li class="logos-list__item logos-list__item1"></li>
+				<li class="logos-list__item logos-list__item2"></li>
+				<li class="logos-list__item logos-list__item3"></li>
+				<li class="logos-list__item logos-list__item4"></li>
+				<li class="logos-list__item logos-list__item5"></li>
+				<li class="logos-list__item logos-list__item6"></li>
+			</ul>
+			<!-- <img src="img/logos.png" class="img_logos"> -->
 		</div>
-	</div>
+	</section>
 	<!-- --------------COPYRIGHT -->
-	<div class="copyright">
-		<div class="copyright_inner">
-			<div class="copyright_item copyright_item1">
-				<h1 class="copyright_item_title1"><span>PIGBULL</span>ER</h1>
-				<h2 class="copyright_item_title2">Copyright 2013, Pingbull AS</h2>
+	<section class="copyright">
+		<div class="section-wrapper clearfix">
+			<div class="copyright_item1">
+				<h1 class="copyright_item_title1">PIGBULL<span>ER</span></h1>
+				<h2 class="copyright_item_title1_subtitle">Copyright 2013, Pingbull AS</h2>
 				<p class="copyright_item_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu </p>			
 			</div>
-			<div class="copyright_item">
-				<h1 class="copyright_item_title">RECENT COMMENTS</h1>
+			<div class="copyright_item2-3">
+				<h1 class="copyright_item_title2-3">RECENT COMMENTS</h1>
 				<p class="copyright_item_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum </p>			
-			</div>			<div class="copyright_item">
-				<h1 class="copyright_item_title">RECENT COMMENTS</h1>
-				<p class="NEW S CATEGORIES">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum </p>			
+			</div>
+			<div class="copyright_item2-3">
+				<h1 class="copyright_item_title2-3">RECENT COMMENTS</h1>
+				<p class="copyright_item_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum </p>			
 			</div>
 
 		</div>
-	</div>
+	</section>
 	<!-- ---------------FOOTER -->
-	<footer>
-		<div class="footer_inner">
-			<ul class="menu menu_footer">
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Dolor sut amet
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					lorem ipsum</a
-					>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Products
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					Blog
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
-					About
-					</a>
-				</li>
-				<li class="menu_item">
-					<a class="menu_link" href="#">
+	<footer class="footer">
+		<div class="section-wrapper clearfix">
+			<ul class="main-nav clearfix">
+				<li class="main-nav__item ">
+					<a class="main-nav__link" href="#">
 					Home
 					</a>
 				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+					About</a
+					>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+					Blog
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+					Products
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+					lorem ipsum
+					</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">
+					Dolor sut amet
+					</a>
+				</li>
 			</ul>
-			<p class="p_footer">
+			<p class="footer_designedby__p">
 				Designed by 
-				<span>Pingbull AS</span>
+				<span class="footer_designedby__span">Pingbull AS</span>
 			</p>
 
 		</div>

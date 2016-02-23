@@ -10,35 +10,45 @@
 	
 	<div class="wrapper">
 <!-- ------------------HEADER+BANNER -->
-		<header>
-			<img class="icon_phone" src="img/icon_phone.png">
+		<header class="header">
+		<div class="top-part">
 			<span class="phone_number">(044)122-67 (044)567-89-10</span>
-			<div class="avtoriz">
-				<form action="#" method="POST">
-					<img class="avtoriz_element" src="img/icon_human.png">
-					<input class="avtoriz_element" type="text" placeholder="логин">
-					<input class="avtoriz_element" type="password" placeholder="пароль">
-					<a class="avtoriz_element" href="#">вход</a>
-					<a class="avtoriz_element" href="#">регистрация</a>
-					<a class="avtoriz_element" href="#">забыли пароль?</a>
+				<form action="#" class="login-form" method="POST">
+					<img class="login-form__img" src="img/icon_human.png">
+					<input class="login-form__input" type="text" placeholder="логин">
+					<input class="login-form__input" type="password" placeholder="пароль">
+					<a class="login-form__link1-2" href="#">вход</a>
+					<a class="login-form__link1-2" href="#">регистрация</a>
+					<a class="login-form__link3" href="#">забыли пароль?</a>
 				</form>
-			</div>
 			<div class="icons3">
 				<img class="icon" src="img/icon_home.png">
 				<img class="icon" src="img/icon_map.png">
 				<img class="icon" src="img/icon_mail.png">
 			</div>
+		</div>
 		<div class="banner"><img src="img/banner.jpg"></div>
 
 
 <!-- -------------MENU -->
-			<ul class="menu_ul">
-				<li class="menu_li basket">Товаров:0 на сумму: 0,00 грн.</li>
-				<li class="menu_li"><a href="#">КОНТАКТЫ</a></li>
-				<li class="menu_li"><a href="#">СТАТЬИ</a></li>
-				<li class="menu_li"><a href="#">ДОСТАВКА</a></li>
-				<li class="menu_li"><a href="#">ОПЛАТА</a></li>
-				<li class="menu_li"><a href="#">О КОМПАНИИ</a></li>
+			<ul class="main-nav">
+				<li class="main-nav__item basket">Товаров:0 на сумму: 0,00 грн.
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">КОНТАКТЫ</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">СТАТЬИ</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">ДОСТАВКА</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">ОПЛАТА</a>
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">О КОМПАНИИ</a>
+				</li>
 			</ul>
 		</header>
 
@@ -46,88 +56,129 @@
 <!-- -----------FILTERS -->
 		<div class="filters">
 		<form action="#" method="post" class="form search_by_car">
-			Диски: Поиск по автомобилю
+<!-- 			Диски: Поиск по автомобилю
 			Марка авто:<input list="marka">
 			Модель автомобиля:<input list="marka">
 			Год выпуска автомобиля: <input list="year">
-			Комплектация: <input list="complektaciya">
+			Комплектация: <input list="complektaciya"> -->
 		</form>
 		<form action="#" method="post" class="form search_tire">
-			ПОИСК ШИН
+			
 		</form>
 		<form action="#" method="post" class="form search_disk">
-			ПОИСК ДИСКОВ
+			
 		</form>
 		
 		</div>
 
 <!-- ---------------LEFT CONTENT -->
 		<div class="content">
-			<aside class="left_sidebar">
-				<div class="title1">
+			<aside class="left-sidebar">
+				<div class="catalog">
 					<img src="img/icon_catalog.png">
 					КАТАЛОГ ПРОДУКЦИИ:
 				</div>
-				<div class="title1">
+				<div class="product-category">
 					<img src="img/icon_disk.png">
 					ШИНЫ
 				</div>
-				<ul class="naming_list">
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
+				<ul class="product-list">
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 1</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 2</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 3</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 4</a>
+					</li>
 				</ul>
-				<div class="title1">
+				<div class="product-category">
 					<img src="img/icon_disk.png">
 					ДИСКИ
 				</div>
-				<ul class="naming_list">
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
+				<ul class="product-list">
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 1</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 2</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 3</a>
+					</li>
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 4</a>
+					</li>
 				</ul>
-				<div class="title1">
+				<div class="product-category">
 					<img src="img/icon_disk.png">
 					БОЛТЫ
 				</div>
-				<ul class="naming_list">
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
+				<ul class="product-list">
+					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 1</a>
+					</li>					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 2</a>
+					</li>					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 3</a>
+					</li>					<li class="product-list__item">
+						<img class="product-list-item__img" src="img/icon_circle.png">
+						<a href="#">Наименование 4</a>
+					</li>
 				</ul>
 			</aside>
 
 
 <!-- ----------------CENTER CONTENT -->
 			<div class="center">
-				<table>
+				<table class="table">
 					<tr>
-						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
-							<div class="tire_div">
-								<img class="tire" src="img/tire1.png">
-							</div>
-							<p class="price">90.00 грн </p>
+						<td class="product-cell">
+							<figure> 
+								<figcaption class="manufacturer">
+									Goodyear
+									<p class="model">Ultra Grip Extreme</p>
+								</figcaption>
+								<div class="tire_div">
+									<img class="tire" src="img/tire1.png">
+								</div>
+								<p class="price">90.00 грн </p>
+							</figure>
 						</td>
-						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
-							<div class="tire_div">
-							<img class="tire" src="img/tire2.png">
-							</div>
-							<p class="price">90.00 грн </p>
+						<td  class="product-cell">
+							<figure>
+								<p class="manufacturer">Nokian</p>
+								<p class="model">Hakkapeliitta R</p>
+								<div class="tire_div">
+								<img class="tire" src="img/tire2.png">
+								</div>
+								<p class="price">115.00 грн </p>
+							</figure>
 						</td>
-						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
-							<div class="tire_div">
-							<img class="tire" src="img/tire3.png">
-							</div>
-							<p class="price">90.00 грн </p>
+						<td  class="product-cell">
+							<figure>
+								<p class="manufacturer">Hankook</p>
+								<p class="model">K 708 155/65 R14</p>
+								<div class="tire_div">
+								<img class="tire" src="img/tire3.png">
+								</div>
+								<p class="price">393.00 грн </p>
+							</figure>
 						</td>
 					</tr>
 					<tr>
@@ -140,20 +191,20 @@
 							<p class="price">90.00 грн </p>
 						</td>
 						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
+							<p class="manufacturer">Nokian</p>
+							<p class="model">Hakkapeliitta R</p>
 							<div class="tire_div">
 							<img class="tire" src="img/tire2.png">
 							</div>
-							<p class="price">90.00 грн </p>
+							<p class="price">115.00 грн </p>
 						</td>
 						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
+							<p class="manufacturer">Hankook</p>
+							<p class="model">K 708 155/65 R14</p>
 							<div class="tire_div">
 							<img class="tire" src="img/tire3.png">
 							</div>
-							<p class="price">90.00 грн </p>
+							<p class="price">393.00 грн </p>
 						</td>
 					</tr>
 					<tr>
@@ -166,20 +217,20 @@
 							<p class="price">90.00 грн </p>
 						</td>
 						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
+							<p class="manufacturer">Nokian</p>
+							<p class="model">Hakkapeliitta R</p>
 							<div class="tire_div">
 							<img class="tire" src="img/tire2.png">
 							</div>
-							<p class="price">90.00 грн </p>
+							<p class="price">115.00 грн </p>
 						</td>
 						<td>
-							<p class="manufacturer">Goodyear</p>
-							<p class="model">Ultra Grip Extreme</p>
+							<p class="manufacturer">Hankook</p>
+							<p class="model">K 708 155/65 R14</p>
 							<div class="tire_div">
 							<img class="tire" src="img/tire3.png">
 							</div>
-							<p class="price">90.00 грн </p>
+							<p class="price">393.00 грн </p>
 						</td>
 					</tr>
 				</table>
@@ -187,43 +238,62 @@
 
 <!-- -----------------------RIGHT CONTENT -->
 			<aside class="right_sidebar">
-				<div class="title1">
-					<img src="img/icon_catalog.png">
-					<span>БРЕНДЫ:</span>
+				<div class="catalog">
+					<img class="catalog__img" src="img/icon_catalog.png">
+					БРЕНДЫ:
 				</div>
-				<div class="title1">
+				<div class="brand-category">
 					<img src="img/icon_disk.png">
 					ШИНЫ
 				</div>
-				<ul class="naming_list">
-					<li><a href="#">Бренд 1</a></li>
-					<li><a href="#">Бренд 2</a></li>
-					<li><a href="#">Бренд 3</a></li>
+				<ul class="brand-list">
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand1_1">
+						<label for="brand1_1">Бренд 1</label>
+					</li>
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand1_2">
+						<label for="brand1_2">Бренд 2</label>
+					</li>
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand1_3">
+						<label for="brand1_3">Бренд 3</label>
+					</li>
 				</ul>
-				<div class="title1">
+				<div class="brand-category">
 					<img src="img/icon_disk.png">
 					ДИСКИ
 				</div>
-				<ul class="naming_list">
-					<li><a href="#">Бренд 1</a></li>
-					<li><a href="#">Бренд 2</a></li>
-					<li><a href="#">Бренд 3</a></li>
+				<ul class="brand-list">
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand2_1">
+						<label for="brand2_1">Бренд 1</label>
+					</li>
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand2_2">
+						<label for="brand2_2">Бренд 2</label>
+					</li>
+					<li class="brand_list__item">
+						<input type="checkbox" name="brand" id="brand2_3">
+						<label for="brand2_3">Бренд 3</label>
+					</li>
 				</ul>
+				<input class="btn-select" type="reset" name="brand" value="ВЫБРАТЬ">
 			</aside>
 
 
 		</div>
 
 <!-- -------------LOGOS	 -->
-		<div class="ls">
-			<img class="l" src="img/brand1.png">
-			<img class="l" src="img/brand2.png">
-			<img class="l" src="img/brand3.png">
-			<img class="l" src="img/brand4.png">
-			<img class="l" src="img/brand5.png">
-			<img class="l" src="img/brand6.png">
-			<img class="l" src="img/brand7.png">
-			<img class="l" src="img/brand8.png">
+		<div class="logos-list">
+			<img class="logos-list__img" src="img/brand1.png">
+			<img class="logos-list__img" src="img/brand2.png">
+			<img class="logos-list__img" src="img/brand3.png">
+			<img class="logos-list__img" src="img/brand4.png">
+			<img class="logos-list__img" src="img/brand5.png">
+			<img class="logos-list__img" src="img/brand6.png">
+			<img class="logos-list__img" src="img/brand7.png">
+			<img class="logos-list__img" src="img/brand8.png">
 		</div>
 
 <!-- -----------FOOTER -->

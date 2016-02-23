@@ -1,31 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+	font-family: 'Lucida Sans';
+		src: url('lucida_sans_unicode_regular-webfont.eot');
+		src: url('lucida_sans_unicode_regular-webfont.woff') format ('woff'), 
+	    	 url('lucida_sans_unicode_regular-webfont.woff2') format ('woff2'),
+			 url('../fonts/Lucida Sans Regular.ttf') format ('truetype');	
+	font-style: normal;
+	font-weight: normal;
+}
+
 body {
 	background-color: #bfbfbf;
+	 font-family: 'Lucida Sans', sans-serif;
 }
 
 .wrapper {
 	width: 1000px;
 	margin: auto;
-	padding-top: 6px;
 	background-color: white;
 }
 
 /*-------------HEADER+BANNER*/
 
-header {
+.header {
+}
+
+.top-part {
+	width: 910px;
+	height: 27px;
+	margin: auto;
+	padding-top: 17px;
+	padding-bottom: 10px;
 	font-size: 18px;
-	width: 910px;
-	margin: auto;
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
-.banner {
-	width: 910px;
-	margin: auto;
-}
-
-.icon {
-	display: inline-block;
+	position: relative;
 }
 
 .icon_phone {
@@ -34,54 +45,112 @@ header {
 }
 
 .phone_number {
+	width: 285px;
+	padding-left: 23px;
 	display: inline-block;
 	font-size: 18px;
-	vertical-align: top;
+	font-family: Arial;
+	text-align: center;
 }
 
-.avtoriz {
+.phone_number:before {
+	position: absolute;
+	top: 17px;
+	left: 6px;
+	content: '';
+	display: block;
+
+	width: 22px;
+	height: 21px;
+	background: url('../img/icon_phone.png');
+}
+
+
+.banner {
+	width: 910px;
+	margin: auto;
+}
+
+.login-form {
 	display: inline-block;
 	background-color: #0e375b;
 	font-size: 11px;
-	vertical-align: top;
+	vertical-align: middle;
+	height: 27px;
+	width: 494px;
+	border-radius: 5px;
+	box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+	box-shadow: 4px 4px 6px grey;
+	position: relative;
+	padding: 2px 2px;
+	box-sizing: border-box;
 }
 
-.avtoriz_element {
+.login-form__img {
+	}
+
+.login-form__input {
+	padding: 2px 2px;
 	display: inline-block;
-	/*padding: 2px;*/
+	padding: 2px;
 	color: white;
-	vertical-align: middle;
+	width: 114px;
+	height: 17px;
+	font-size: 11px;
+	border-radius: 1px;
+	border: none;
+	box-sizing: border-box;
+	vertical-align: super;
+}
+
+.login-form__link1-2 {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+		vertical-align: super;
+}
+
+.login-form__link3 {
+	color: grey;
+	vertical-align: super;
 }
 
 .icons3 {
+	height: 19px;
+	width: 76px;
+	padding: 0px 10px;
+	box-sizing: border-box;
 	border: 1px solid grey;
 	border-radius: 10px;
 	display: inline-block;
-	vertical-align: top;
+
 }
 
 /*-----------------MENU*/
 
-.menu_ul {
+.main-nav {
 	margin: auto;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-top: 4px;
 	padding-top: 3px;
 	padding-bottom: 2px; 
-	background-color: black;
 	width: 910px;
-	/*border: 1px solid grey;*/
 	border-radius: 5px;
 	height: 28px;
+	/*background-color: black;*/
+	border: 1px solid rgba(10,18,53,0.2);
+	background: linear-gradient(to bottom, rgba(246,41,12,1) 0%, rgba(87,96,104,1) 0%, rgba(46,43,43,1) 29%, rgba(26,24,24,1) 84%, rgba(0,0,0,1) 100%);
+	box-shadow: 0px 5px 10px grey;
 }
 
-.menu_li {
+.main-nav__item {
 	display: inline-block;
 	float: right;
 
 }
 
-.menu_li a:link, .menu_li a:visited {
+.main-nav__link:link,
+.main-nav__link:visited {
 	display: block;
 	color: white;
 	text-decoration: none;
@@ -91,12 +160,13 @@ header {
 
 }
 
-.menu_li a:active, .menu_li a:hover {
+.main-nav__link:active,
+.main-nav__link:hover {
 	border-radius: 10px;
 	background-color: #0d365a;
 }
 
-.basket {
+.main-nav .basket {
 	display: block;
 	color: white;
 	padding: 6px 0px 6px 20px;
@@ -105,38 +175,44 @@ header {
 
 /*-------------FILTERS*/
 .filters {
-	/*height: 135px;*/
+	height: 135px;
 	width: 910px;
-	margin: auto;
+	margin: 12px auto 16px auto;
+
 }
 
 .form {
+	float: left;
 	border: 1px solid grey;
-	border-radius: 10px;
+	border-radius: 15px;
 	display: inline-block;
 	height: 135px;
+	box-sizing: border-box;
+	box-shadow: 3px 3px 7px rgba(104, 104, 104, 0.75);
 }
 
 .search_by_car {
-	width: 420px;
+	width: 414px;
+	margin-left: 5px;
 }
 
 .search_tire {
-	width: 190px;
+	width: 193px;
+	margin-left: 15px;
 }
 
 .search_disk {
-	width: 270px;
+	width: 268px;
+	margin-left: 10px;
 }
 
 /*------------------LEFT CONTENT*/
 .content {
 	overflow: hidden;
-	/*float: left;*/
 	width: 910px;
 	margin: auto;
 }
-.left_sidebar{
+.left-sidebar{
 	width: 190px;
 	height: 628px;
 	padding-bottom: 20000px;
@@ -144,59 +220,87 @@ header {
 	float: left;
 }
 
-.naming_list {
-	padding-left: 34px;
-} 
-
-.naming_list a:link, .naming_list a:visited {
-	text-decoration: none;
-	color: #465961;
-}
-
-.naming_list a:active, .naming_list a:hover {
-	text-decoration: underline;
-	color: #0c3256;
-}
-
-.title1 {
+.catalog {
+	width: 182px;
+	height: 26px;
 	border: 1px solid #214e6f;
-	border-radius: 10px;
-	font-size: 14px;
-	color: #214e6f;
+	border-radius: 13px;
+	font-size: 12.59px;
+	color: #114165;
 	padding: 2px;
-
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin: 2px 0px 14px 0px;
 }
 
-.title1 span {
-	/*vertical-align: top;*/
-	/*display: inline-block;*/
-	/*padding: 3px;*/
+.catalog__img {
+		/*display: inline;*/
+}
+
+.product-category {
+	width: 150px;
+	height: 28px;
+	font-size: 14px;
+	color: #114165;
+	border: 1px solid #214e6f;
+	border-radius: 13px;
+	box-sizing: border-box;
     display:flex;		
     align-items:center;
 }
 
-.title1 img {
-	display: inline;
+.product-list {
+	padding-left: 34px;
+} 
+
+.product-list__item {
+	line-height: 27px;
 }
 
-h1 {
-
-	height: 14px;
+.product-list a:link, .product-list a:visited {
+	font-family: Arial;
+	font-size: 13px;
+	color: #5f6f76;
+	text-decoration: none;
 }
+
+.product-list a:active, .product-list a:hover {
+	color: #0c3256;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	color: #114165;
+}
+
 
 
 /*----------------CENTER CONTENT*/
 .center{
 	float: left;
-	padding-bottom: 20000px;
-	margin-bottom: -20000px;
+											 /*WHY IS THAT?*/
+/*	padding-bottom: 20000px;                       
+	margin-bottom: -20000px;*/
+  	
   	width: 525px;
-  	background-color: #94a7b0
+  	height: 628px;
+  	border-radius: 3px;
+  	background-image: linear-gradient(to top, rgba(147,167,176,1), rgba(229,231,232,1));
   }
 
+
+.table {
+	margin: auto;
+}
+
+/*.product-cell {
+	width: 33.3%;
+}
+*/
 .tire_div {
-	width: 135px;
-	height: 130px;
+	width: 138px;
+	height: 128px;
 	background-color: white;
 	border-radius: 5px;
 	border: 1px solid grey;
@@ -207,10 +311,26 @@ h1 {
 	padding-top: 5px;
 }
 
-.manufacturer,
-.model,
-.price {
+.manufacturer {
+	font-size: 14.59px;
 	text-align: center;
+	color: #206988;
+}
+
+.model {
+	font-size: 12.77px; 
+	text-align: center;
+	color: black;
+}
+
+.price {
+	font: 16px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Arial;
+	text-align: center;
+	color: #114165;
+
 }
 
 td {
@@ -225,32 +345,64 @@ td {
 	float: right;
 }
 
+.brand-category {
+	width: 150px;
+	height: 28px;
+	font-size: 14px;
+	color: #114165;
+	border: 1px solid #214e6f;
+	border-radius: 13px;
+	box-sizing: border-box;
+    display:flex;		
+    align-items:center;
+    margin-left: 19px;
+}
+
+.brand-list {
+	margin-left: 30px;
+}
+
+.brand_list__item {
+	line-height: 27px;
+	font-family: Arial;
+	font-size: 13px;
+	color: #5f6f76;
+}
+
+.brand_list__item:before {
+}
+
+.btn-select {
+	width: 82px;
+	height: 28px;
+	border: 0px ;
+	border-radius: 13px;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+	margin-left: 30px;
+	padding: 8px 0px;
+	box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(31,104,135,1) 0%, rgba(12,51,87,1) 100%);
+	box-shadow: 4px 4px 6px grey;
+}
+
 /*-------------LOGOS*/
 
 
-.ls {
+.logos-list {
 	padding-left: 160px;
-	margin-top: 40px;
-	margin-bottom: 30px; 
+	padding-top: 40px;
+	padding-bottom: 30px; 
+	height: 90px;
+	box-sizing: border-box;
 }
 
-.l {
+.logos-list__img {
 	display: inline;
 	padding: 0px 4px;
 	display: inline-block;
-}
-
-.logos {
-	margin: auto;
-	width: 910px;
-	margin-top: 40px;
-	margin-bottom: 30px;
-
-}
-
-.logos li {
-	display: inline;
-	margin: 6px;
+	vertical-align: middle;
 }
 
 /*-----------FOOTER*/
@@ -261,6 +413,7 @@ footer {
 	margin: auto;
 	padding-top: 13px;
 	background-color: #213a4d;
+	font-family: Arial;
 
 } 
 
